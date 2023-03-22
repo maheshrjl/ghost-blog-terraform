@@ -1,10 +1,10 @@
-# Ghost setup with terraform and ansible
+# [Ghost](https://ghost.org/) blog setup with terraform and ansible
 
 ### Status ⚠
 
 This is a work in progress.
 
-- [x] Install dependencies required for ghost ()
+- [x] Install dependencies required for ghost
 - [ ] Configure mySQL
 - [ ] Configure Nginx
 - [ ] Configure Ghost
