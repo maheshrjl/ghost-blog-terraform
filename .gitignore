@@ -1,0 +1,42 @@
+# Local .terraform directories
+**/.terraform/*
+
+# Crash log files
+crash.log
+
+# .tfstate files
+*.tfstate
+*.tfstate.*
+
+# Ignore any .tfvars files that are generated automatically
+*.auto.tfvars
+
+# Ignore override files as they are usually used to override resources locally and not checked in
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Ignore any plan files that may be generated as a result of running `terraform plan`
+*.tfplan
+
+# Ignore the .terraformrc file as it often contains sensitive information
+.terraformrc
+
+# Ignore any .tfstate.backup files that may be created
+*.tfstate.backup
+
+# Ignore any .terraform.lock.hcl files that may be created
+.terraform.lock.hcl
+
+# Ignore any .terraform.tfstate files that may be created
+*.terraform.tfstate
+
+# Ignore any .terraform/providers directory that may be created
+.terraform/providers/
+
+# Ignore tfvars
+*.tfvars
+
+# Ignore Cloudinit (Unstable)
+cloud-init.yml
