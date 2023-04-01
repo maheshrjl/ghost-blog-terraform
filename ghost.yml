@@ -4,6 +4,7 @@
   hosts: all
   vars:
     nodejs_version: 16
+    site_name: maheshrjl.com
 
   tasks:
     - name: Update all packages
@@ -53,7 +54,18 @@
       register: version
       changed_when: false
 
-    - name: Print version of installed dependencies
+    # - name: Print version of installed dependencies
+    #   ansible.builtin.debug:
+    #     msg: "{{ item.stdout }}"
+    #   loop: "{{ version.results }}"
+
+    - name: Create a ghost directory
+      ansible.builtin.file:
+        path: "/var/www/{{ site_name }}"
+        state: directory
+        mode: 0755
+        owner: root
+
+    - name: Prompt user for ghost install
       ansible.builtin.debug:
-        msg: "{{ item.stdout }}"
-      loop: "{{ version.results }}"
+        msg: "Please run ghost install in /var/www/{{ site_name }} to complete the installation"
